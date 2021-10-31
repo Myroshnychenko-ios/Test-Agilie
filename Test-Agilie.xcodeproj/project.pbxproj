@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2811F329272F024400A30D60 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F328272F024400A30D60 /* Router.swift */; };
+		2811F32B272F02A700A30D60 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F32A272F02A700A30D60 /* ModuleBuilder.swift */; };
+		2811F32D272F031500A30D60 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F32C272F031500A30D60 /* MapPresenter.swift */; };
+		2811F32F272F038D00A30D60 /* MapVC + ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F32E272F038D00A30D60 /* MapVC + ViewProtocol.swift */; };
 		28343297272EF9F500C44EE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28343296272EF9F500C44EE6 /* AppDelegate.swift */; };
 		28343299272EF9F500C44EE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28343298272EF9F500C44EE6 /* SceneDelegate.swift */; };
-		2834329B272EF9F500C44EE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834329A272EF9F500C44EE6 /* ViewController.swift */; };
+		2834329B272EF9F500C44EE6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834329A272EF9F500C44EE6 /* MapViewController.swift */; };
 		2834329E272EF9F500C44EE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2834329C272EF9F500C44EE6 /* Main.storyboard */; };
 		283432A0272EF9F600C44EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2834329F272EF9F600C44EE6 /* Assets.xcassets */; };
 		283432A3272EF9F600C44EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283432A1272EF9F600C44EE6 /* LaunchScreen.storyboard */; };
@@ -17,10 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2811F328272F024400A30D60 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2811F32A272F02A700A30D60 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		2811F32C272F031500A30D60 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		2811F32E272F038D00A30D60 /* MapVC + ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC + ViewProtocol.swift"; sourceTree = "<group>"; };
 		28343293272EF9F500C44EE6 /* Test-Agilie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Agilie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28343296272EF9F500C44EE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28343298272EF9F500C44EE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2834329A272EF9F500C44EE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2834329A272EF9F500C44EE6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2834329D272EF9F500C44EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2834329F272EF9F600C44EE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283432A2272EF9F600C44EE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +58,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2811F320272EFBDB00A30D60 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2811F321272EFBE300A30D60 /* Router */,
+				2811F322272EFBEB00A30D60 /* Module builder */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2811F321272EFBE300A30D60 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2811F328272F024400A30D60 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2811F322272EFBEB00A30D60 /* Module builder */ = {
+			isa = PBXGroup;
+			children = (
+				2811F32A272F02A700A30D60 /* ModuleBuilder.swift */,
+			);
+			path = "Module builder";
+			sourceTree = "<group>";
+		};
+		2811F323272EFC1100A30D60 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2811F324272EFC2500A30D60 /* Map */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2811F324272EFC2500A30D60 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2811F326272F01E200A30D60 /* Model */,
+				2811F325272F01DC00A30D60 /* View */,
+				2811F327272F01EF00A30D60 /* Presenter */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		2811F325272F01DC00A30D60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2834329A272EF9F500C44EE6 /* MapViewController.swift */,
+				2811F32E272F038D00A30D60 /* MapVC + ViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2811F326272F01E200A30D60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2811F327272F01EF00A30D60 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2811F32C272F031500A30D60 /* MapPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		2834328A272EF9F500C44EE6 = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +148,8 @@
 			children = (
 				283432AB272EFA2F00C44EE6 /* Application */,
 				283432AA272EFA1A00C44EE6 /* Resources */,
-				2834329A272EF9F500C44EE6 /* ViewController.swift */,
+				2811F320272EFBDB00A30D60 /* Managers */,
+				2811F323272EFC1100A30D60 /* Source */,
 			);
 			path = "Test-Agilie";
 			sourceTree = "<group>";
@@ -104,7 +180,6 @@
 				ED763CCA9195E946AACE80D6 /* Pods-Test-Agilie.debug.xcconfig */,
 				8172BD4C01F834663B642F2B /* Pods-Test-Agilie.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -223,9 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2834329B272EF9F500C44EE6 /* ViewController.swift in Sources */,
+				2811F329272F024400A30D60 /* Router.swift in Sources */,
+				2834329B272EF9F500C44EE6 /* MapViewController.swift in Sources */,
 				28343297272EF9F500C44EE6 /* AppDelegate.swift in Sources */,
+				2811F32B272F02A700A30D60 /* ModuleBuilder.swift in Sources */,
+				2811F32F272F038D00A30D60 /* MapVC + ViewProtocol.swift in Sources */,
 				28343299272EF9F500C44EE6 /* SceneDelegate.swift in Sources */,
+				2811F32D272F031500A30D60 /* MapPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
