@@ -56,15 +56,31 @@
 		28343295272EF9F500C44EE6 /* Test-Agilie */ = {
 			isa = PBXGroup;
 			children = (
-				28343296272EF9F500C44EE6 /* AppDelegate.swift */,
-				28343298272EF9F500C44EE6 /* SceneDelegate.swift */,
+				283432AB272EFA2F00C44EE6 /* Application */,
+				283432AA272EFA1A00C44EE6 /* Resources */,
 				2834329A272EF9F500C44EE6 /* ViewController.swift */,
-				2834329C272EF9F500C44EE6 /* Main.storyboard */,
-				2834329F272EF9F600C44EE6 /* Assets.xcassets */,
-				283432A1272EF9F600C44EE6 /* LaunchScreen.storyboard */,
-				283432A4272EF9F600C44EE6 /* Info.plist */,
 			);
 			path = "Test-Agilie";
+			sourceTree = "<group>";
+		};
+		283432AA272EFA1A00C44EE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2834329F272EF9F600C44EE6 /* Assets.xcassets */,
+				283432A4272EF9F600C44EE6 /* Info.plist */,
+				2834329C272EF9F500C44EE6 /* Main.storyboard */,
+				283432A1272EF9F600C44EE6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		283432AB272EFA2F00C44EE6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				28343296272EF9F500C44EE6 /* AppDelegate.swift */,
+				28343298272EF9F500C44EE6 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,12 +306,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Test-Agilie/Info.plist";
+				INFOPLIST_FILE = "Test-Agilie/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Agilie;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +335,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Test-Agilie/Info.plist";
+				INFOPLIST_FILE = "Test-Agilie/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Agilie;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
